@@ -1,0 +1,31 @@
+//使用count _if求解
+#include<algorithm>
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  string s;
+  getline(cin,s);
+  char c = tolower(getchar());
+  cout<<count_if(s.begin(),s.end(),[c](char i){return tolower(i)==c;})
+}
+
+
+//c++简单写法
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  string s;
+  getline(cin,s);
+  char c = tolower(getchar());
+  uint16_t n=0;
+for( auto i:s){
+  if(totower(i)==c)
+  ++n;
+}
+cout<<n<<endl;
+
+}
