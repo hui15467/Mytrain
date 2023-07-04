@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<iostream>
+int main()
+{
+  int n;
+  cin>>n;
+  int a[n]={0};
+  int i,j;
+  int temp;
+  for(i=0;i<n;i++)
+{
+  cin>>a[i];
+}
+  for(i=0;i<n;i++)
+{
+  for(j=i+1;j<n;j++)
+{
+  if(a[i]==a[j]){
+  a[j]=-1;
+}
+  if(a[i]>a[j]){
+  temp=a[i];
+  a[i]=a[j];
+  a[j]=temp;
+}
+}
+}for(i=0;i<n;i++)
+{
+  if(a[i]==-1)
+{
+continue;
+}
+cout<<a[i]<<endl;
+}
+
+}
+
+//还可用数组方式,异空间换时间
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int val[1000]={0};
+  int N,num;
+  cin>>N;
+  for(int i=0;i<n;i++)
+{
+  cin>>num;
+  val[num]=num;
+}
+for(int j=0;j<1000;i++){
+  if(val[j]!=0)
+  cin>>val[j]<<endl;
+}
+}
